@@ -1,0 +1,59 @@
+# Compiled class files
+*.class
+target/
+
+# Maven
+.mvn/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+# Eclipse / STS
+.settings/
+.classpath
+.project
+.metadata/
+bin/
+tmp/
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.loadpath
+.recommenders
+.factorypath
+.buildpath
+.target
+.springBeans
+.sts4-cache/
+
+# IntelliJ IDEA (in case you switch later)
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# VS Code
+.vscode/
+
+# Spring Boot
+HELP.md
+
+# Logs
+*.log
+logs/
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Environment / secrets
+.env
+*.env.local
+application-local.properties
+application-secrets.properties
+
+# Kafka data / logs directory (if generated inside project folder)
+kafka-logs/
