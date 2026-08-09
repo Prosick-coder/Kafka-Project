@@ -10,11 +10,9 @@ import com.prosick.kafka.payload.User;
 @Service
 public class ConsumerClass {
 
-	
-	
 	private static final Logger LOGGER = LoggerFactory.getLogger(ConsumerClass.class);
 	
-	@KafkaListener(topics = "${spring.kafka.topic}", groupId = "my-spring-group")
+	@KafkaListener(topics = "${spring.kafka.topic}", groupId = "${spring.kafka.consumer.group-id}")
 	public void consume(User message) {
 		LOGGER.info(String.format("Message received -> %s", message));
 	}
